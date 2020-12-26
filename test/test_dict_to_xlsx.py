@@ -1,8 +1,9 @@
-import sys, os
-
-sys.path.insert(1, os.path.dirname(os.path.realpath(__file__)) + '\\..\\src')
-
+from load_paths import load_paths
+load_paths()
 from dict_to_xlsx import dict_to_xlsx
 
 
+print('\n\nWorkbook allocated on:')
 print(dict_to_xlsx({}, [], []))
+
+print('\n')
